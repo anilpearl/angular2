@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+    <style type="text/css">
+    	
+    	table, th, td{
+    		border: 1px solid black;
+    	}
+
+    </style>
+ 
+</head>
+<body>
+    <h1>HomePage</h1>
+    <h2>Smaller HomePage</h2>
+    <h3>More Smaller</h3>
+    <h4>World</h4>
+    <h5>Good</h5>
+
+    <div style="color:pink; font-size: 1.5em">
+    <p>
+    The CompositeCacheManager above chains multiple CacheManagers and additionally, through the fallbackToNoOpCache flag, adds a no op cache that for all the definitions not handled by the configured cache managers. That is, every cache definition not found in either jdkCache or gemfireCache (configured above) will be handled by the no op cache, which will not store any information causing the target method to be executed every time.
+    </p>
+
+    <em>The CompositeCacheManager above chains multiple CacheManagers and additionally, through the fallbackToNoOpCache flag, adds a no op cache that for all the definitions not handled by the configured cache managers. That is, every cache definition not found in either jdkCache or gemfireCache (configured above) will be handled by the no op cache, which will not store any information causing the target method to be executed every time.</em>
+    </div>
+
+    <div style="color:blue; font-size: 1.5em; background-color: lightblue;">
+    <pre>
+    id="cacheManager" class="org.springframework.cache.support.CompositeCacheManager"
+    property name="cacheManagers"
+        list
+            ref bean="jdkCache"
+            ref bean="gemfireCache"
+        list
+    property
+    property name="fallbackToNoOpCache" value="true"
+    bean
+    </pre>
+
+    <hr>
+    <center><b> More Info</b></center>
+    <hr>
+    <img src="C:\Users\NEW\Pictures\angular2.jpg" width="400">
+    <img src="https://cdn-images-1.medium.com/max/800/0*MkoqreKczm5C1TMM.png">
+
+    <a href="http://www.google.com">Go Google</a>
+    </div>
+    
+    <table>
+    	<tr>
+    		<th>
+    			First Name
+    		</th>
+    		<th>
+    			Last Name
+    		</th>
+    		<th>
+    			Age
+    		</th>
+    	</tr>
+    	<tr>
+    		<td>
+    		  Awantik
+    		</td>
+    		<td>
+    			Das
+    		</td>
+    		<td>
+    			55
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    		  Babantik
+    		</td>
+    		<td>
+    	      Tom
+    		</td>
+    		<td>
+    		  155
+    		</td>
+    	</tr>
+
+    </table>
+
+    <form>
+    	<input type="text" name="name">
+    	<input type="submit" name="submit">
+    </form>
+
+</body>
+</html>
