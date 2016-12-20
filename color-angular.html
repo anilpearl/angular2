@@ -1,15 +1,14 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="" ng-init="price=100;cost=10">
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
   </head>
   <body>
     <div>
       <label>Name:</label>
-      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <input type="text" ng-model="yourcolor" placeholder="Enter a name here">
       <hr>
-      <h1>Hello {{yourName}}!</h1>
-      {{7 + 8}}
+      <input style="background-color: {{yourcolor}}" ng-model="price*cost" type="text">
     </div>
   </body>
 </html>
