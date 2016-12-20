@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+    <p id="demo"></p>
+<script>
+
+	function person(first,last,age,eye) {
+		this.firstname = first;
+		this.lastname = last;
+		this.age = age;
+		this.eyeColor = eye;
+
+	}
+
+	var me = new person("awi","das",55,"black");
+	var you = new person("bee","dee",66,"green");
+
+	me.food = "Not yet";
+    
+    var s = "";
+    var x;
+	for( x in me){
+		s += me[x] + " ";
+	}
+    document.getElementById("demo").innerHTML = s;
+    
+</script>
+
+
+
+</body>
+</html>

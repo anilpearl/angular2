@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+    <p id="demo"></p>
+<script>
+
+	function person(first,last,age,eye) {
+		this.firstname = first;
+		this.lastname = last;
+		this.age = age;
+		this.eyeColor = eye;
+
+		this.enjoy = function(){
+			document.getElementById("demo").innerHTML = "Playing Game ";
+		};
+	}
+
+	var me = new person("awi","das",55,"black");
+	var you = new person("bee","dee",66,"green");
+    var s = "";
+    var x;
+    delete you.age;
+    /*
+    for ( x in you ){
+    	s += you[x] + " ";
+    }
+    */ 
+	var d = new Array();
+	var f = new Function();
+	var g = [];
+
+
+	document.getElementById("demo").innerHTML = s ;//+ " " + you["firstname"];
+    
+</script>
+
+<button type="button" onclick="me.enjoy()" >Click Here</button>
+
+</body>
+</html>
