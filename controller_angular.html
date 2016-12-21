@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="myctrl">
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+</head>
+<body>
+<form>
+<input type="text" ng-model="fname">
+<input type="text" ng-model="lname">
+</form>
+{{ fname + " " + lname }}
+
+<script>
+	var app = angular.module('myApp',[]);
+	app.controller('myctrl', function ($scope) {
+		$scope.fname = "Awantik";
+		$scope.lname = "Das";
+	});
+</script>
+</body>
+</html>
